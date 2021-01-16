@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="navigation_bar_style.css"> -->
+    <link rel="stylesheet" href="layout_flex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="top">
+            <h1><a href="#">What is Flexbox?</a></h1>
+        </header>
+        
+        <nav class="flex-nav">
+            <a id="menu" href="#" class="toggleNav">&#x2630 MENU</a>
+            <ul id="navbar" class="open" >
+                <li class="item"><a href="#" class="">item-1</a></li>
+                <li class="item"><a href="#" class="">item-2</a></li>
+                <li class="item"><a href="#" class="">item-3</a></li>
+                <li class="item"><a href="#" class="">item-4</a></li>
+                <li class="item"><a href="#" class="">item-5</a></li>
+                <li class="item"><a href="#" class="">item-6</a></li>
+                <li class="itemf"><a href="#" class=""><i class="fa fa-facebook" ></i>
+                </a></li>
+                <li class="itemf"><a href="#" class=""><i class="fa fa-twitter" aria-hidden="true"></i>
+                </a></li>
+                <li class="itemf"><a href="#" class=""><i class="fa fa-envelope" aria-hidden="true"></i>
+                </a></li>
+                <li class="itemf"><a href="#" class=""><i class="fa fa-github" aria-hidden="true"></i>
+                </a></li>
+            </ul>
+        </nav>
+       
+        <section class="hero"><img src="img.jpg" alt="">
+        </section>
+        
+        <section class="details">
+            <p>A simple video course to help you master FlexBox</p>
+            <p>Sign up today to grab all the exiting videos and exercises</p>
+        </section>
+        
+        
+        <section class="signup">
+            <form action="" class="signup">
+                <input type="text" class="text" placeholder=" Your Name">
+                <input type="text" class="text" placeholder=" Email Address">
+                <input type ="text" class="text" placeholder=" Sign me up!">
+            </form>
+        </section>
+        <footer>
+            <p>&copy;Shailja Chauhan</p>
+        </footer>
+    </div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+      $('.toggleNav').on('click',function(){
+        $('.flex-nav ul').toggleClass('open');
+      });
+    });
+</script>
+    
+</body>
+</html>
